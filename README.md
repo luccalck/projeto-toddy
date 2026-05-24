@@ -1,46 +1,46 @@
 # Projeto Toddy
 
-Site institucional fictício da marca Toddy, desenvolvido como projeto de ADS — SENAI.
+Fictional institutional website for the Toddy brand, developed as an ADS project — SENAI.
 
 ## Stack
 
-- HTML estático
+- Static HTML
 - Tailwind CSS (via CDN)
-- JavaScript vanilla
-- Vídeos `.mp4` controlados por scroll e em loop autoplay
+- Vanilla JavaScript
+- `.mp4` videos with scroll-controlled playback and autoplay loops
 
-## Estrutura
+## Structure
 
 ```
-ProjetoToddy/
-├── index.html      # Página única (SPA estática)
-└── video/          # Vídeos e imagens de produto
+projeto-toddy/
+├── index.html      # Single page (static SPA)
+└── video/          # Product videos and images
     ├── TODDYUSAR_scrub.mp4    # Hero — scroll-controlled
     ├── ToddyFullFrames.mp4    # Toddy Original — autoplay loop
     └── toddyblack169.png      # Toddy Dark
 ```
 
-## Funcionalidades
+## Features
 
-- Hero com vídeo controlado por scroll (scrub)
-- Animações de fade-in/out bidirecionais ao rolar
-- 3 produtos + 3 combos com preços
-- Carrinho em drawer com quantidade, total e persistência via `localStorage`
-- Login simples (nome + e-mail) com validação
-- Confirmação de pedido com número de referência gerado
-- Logout no navbar quando logado
-- Newsletter com validação de e-mail
-- Scrollbar visualmente oculta, scroll suave em toda a página
+- Hero with scroll-controlled video (scrub)
+- Bidirectional fade-in/out animations on scroll
+- 3 products + 3 combos with pricing
+- Drawer cart with quantity, total, and `localStorage` persistence
+- Simple login (name + email) with validation
+- Order confirmation with auto-generated reference number
+- Logout shown on the navbar when logged in
+- Newsletter with email validation
+- Visually hidden scrollbar, smooth scrolling page-wide
 
-## Como rodar localmente
+## How to run locally
 
-Por causa dos vídeos, é preciso servir via HTTP (não abrir o arquivo direto):
+Because of the videos, you must serve via HTTP (don't open the file directly):
 
 ```bash
 python -m http.server 5181
-# abrir http://localhost:5181
+# open http://localhost:5181
 ```
 
 ## Deploy
 
-Site estático — funciona direto no Vercel, Netlify ou GitHub Pages sem build step.
+Static site — works out of the box on Vercel, Netlify or GitHub Pages with no build step.
